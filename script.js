@@ -68,7 +68,7 @@ const getRandomChar = (availableChars) => {
 
 
 const generatePassword = () => {
-  if (!lowerCaseCheckbox && !upperCaseCheckbox && !specialCheckbox && !numbersCheckBox) {
+  if (!lowerCaseCheckbox.checked && !upperCaseCheckbox.checked && !specialCheckbox.checked && !numbersCheckBox.checked) {
     alert('Please select at least one character type');
     return false;
   }
